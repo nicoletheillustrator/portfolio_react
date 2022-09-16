@@ -19,7 +19,5 @@ let techList = tech.map((item, index)=>
                         className="giticon" target="_blank" href={props.dta.projectHref} rel="noreferrer" > </a></i>
 
                         </div>
-                     
-            
     )
 }
