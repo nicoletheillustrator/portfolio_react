@@ -18,7 +18,6 @@ let techList = tech.map((item, index)=>
                         <i className="fa-brands fa-github giticon"> <a
                         className="giticon" target="_blank" href={props.dta.projectHref} rel="noreferrer" > </a></i>
 
-<div className="project-img"></div>
                         </div>
                      
             
