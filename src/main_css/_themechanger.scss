@@ -1,0 +1,195 @@
+//colors
+$medprb:#222F44;
+$lightprb:#293951;
+$darkprb: #1B2636;
+$textblue: #D6DEEA;
+$textsecondary:#BCC9DC;
+$popcolor: #FF5D73;
+#dark {
+    background-color: $medprb;
+    color: $textblue;
+    .heading {
+        @include sm {
+            color: white;
+        }
+    }
+    .logo_name {
+        @include sm {
+            color: white;
+        }
+    }
+    .mode-wrapper {
+        background-color: #3d4050;
+        
+    }
+
+    .menubar-el {
+        @include sm {
+            background-color: #0a182e;
+           
+        }
+        @include l {
+            background-color: transparent;
+            color: $textblue;
+        }
+    }
+    .menubar-el.is-active {
+        @include sm {
+           filter: drop-shadow(0 0 0.5rem $lightprb);
+            
+        }
+    }
+    .menubar-ul :hover {
+        //need this for desktop
+        @include sm {
+            background-color: #00183d;
+        }
+        @include l {background-color: transparent;}
+    }
+    .menubar-li:last-child:hover {
+        background-color: transparent;
+    }
+    .menubar-el a:hover {
+        
+        @include l {
+            color: $popcolor;
+        }
+    }
+    .menubar-el a {
+        @include l {
+            color: $textblue;
+        }
+    }
+    #menu-btn {
+        color: $popcolor;
+    }
+    #menu-btn.colorchange {
+        color: $popcolor;
+        
+    }
+    #about-headline {
+        color: white;
+    }
+
+    #project-headline {
+        color: white;
+    }
+    .line-art {
+        stroke: white;
+    }
+
+    .scroll-decor {
+        @include sm {
+            stroke: white;
+        }
+    }
+    .not-perm { //the blur for navbar
+        @include sm {
+            background-color: #222f449e;
+            box-shadow: 0.5px 7px 10px $darkprb;
+        }
+    }
+
+    .first-icon-color {
+        color: $popcolor;
+    }
+
+
+   .project-card-view-box {
+    background-color: $darkprb;
+    filter: drop-shadow(0 0 0.5rem $lightprb);
+    border-color: $lightprb;
+}
+
+.resume-btn {
+    color: $textblue;
+    border-color: $textsecondary;
+}
+.resume-btn:hover {
+    @include l {
+        color: $popcolor;
+        border-color: $popcolor;
+    }
+}
+
+.footer-btn {
+    color: white;
+}
+.project-card-name {
+    color: white;
+}
+
+.feature-p {
+    color: $textsecondary;
+}
+.tech-li {
+    color: $textsecondary;
+}
+
+.giticon {
+    color: $textsecondary;
+    filter: none;
+}
+
+.icon-ul {
+    color: $textblue;
+   
+}
+.icon-ul li a {
+    
+    color: $textblue;
+}
+
+.icon-ul li a:hover {
+    color: $popcolor;
+}
+#footer-ending {
+    color: $textsecondary;
+}
+
+.bold{
+    color: w;
+}
+
+.icon-ul::after {
+    @include l {
+    background-color: $textsecondary;
+    }
+}
+
+.email-wrapper a {
+    color: $textsecondary;
+}
+.email-wrapper::after {
+    background-color: $textsecondary;
+}
+
+.icon-ul li:hover {
+    color: $popcolor;
+}
+
+.email-wrapper a:hover {
+    color: $popcolor;
+}
+
+#boldname::after {
+
+    @include sm {
+    content: "nicole park";
+    position: absolute;
+    color: #ff5d7365;
+    transform: translateX(-280px) translateY(20px);
+    z-index: -1;
+    width: fit-content;
+    white-space: pre;
+}
+}
+
+#mouse-event {
+    background-color: $popcolor;
+    font-weight: 700;
+    
+}
+   }
+
+
