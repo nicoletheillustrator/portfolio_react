@@ -55,7 +55,7 @@ export default function Loader() {
 
 
         setTimeout(() => {
-            pageRef.current.style.display = 'none !important';
+            pageRef.current.style.display = 'none';
            
             console.log("new loD")
             
