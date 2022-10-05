@@ -6,6 +6,8 @@ export default function Loader() {
     const pageRef = React.useRef()
 
     // until a better solution comes aka more education. what works, works.
+
+
     window.onload = () => {
 
          var loaderwolf = anime.timeline({
@@ -63,8 +65,10 @@ export default function Loader() {
 
 
     };
-
-   
+function test() {
+    console.log("test first load")
+}
+   test()
     return (
         <div id="loader-wrap" ref={pageRef}>
         <svg className="loader-wolf" viewBox="0 0 91 105" fill="none" xmlns="http://www.w3.org/2000/svg">
