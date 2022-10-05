@@ -8,7 +8,7 @@ export default function Loader() {
     // until a better solution comes aka more education. what works, works.
 
 
-    window.load = () => {
+    window.onload = () => {
 
          var loaderwolf = anime.timeline({
             easing: 'easeInOutQuart',
@@ -17,7 +17,6 @@ export default function Loader() {
                 {value: [0, 1], duration: 200}
             ],
 
-          
          });
          
         loaderwolf 
@@ -56,7 +55,8 @@ export default function Loader() {
 
 
 
-        setTimeout(() => {
+        setTimeout(
+            function(){
             pageRef.current.style.display = 'none';
            
             console.log("new loD")
@@ -65,8 +65,11 @@ export default function Loader() {
 
 
     };
+
+
 function test() {
     console.log("test first load")
+//
 }
    test()
     return (
