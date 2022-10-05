@@ -57,7 +57,7 @@ function App() {
 
 function toggleMode() {
   setMode((setMode) => (setMode === sun ? moon : sun))
-};
+}
   const toggleTheme = () => {
   setTheme((curr) =>(curr === "light" ? "dark" : "light" ));
 };
@@ -77,7 +77,7 @@ function handleClick(){
   toggleTheme()
   toggleMode()
   rippleEffect()
-};
+}
 
   function toggleSuggestion() {
     const tipSugg = document.getElementById('mouse-event')
@@ -89,17 +89,17 @@ function handleClick(){
     {
       tipSugg.textContent = 'Switch to light'
     }
-  };
+  }
  //👇 toggleSuggestions are a component that hides and shows when hovered on, giving a tip to the user
 function toggleSuggestionOff() {
   const tipSugg = document.getElementById('mouse-event')
     tipSugg.style.display = 'none'
     
-};
+}
 function toggleMouseDown() {
   const tipSugg = document.getElementById('mouse-event')
     tipSugg.style.display = 'none'
-};
+}
 
 const cards = skillIcons.map(item => {
   return (
