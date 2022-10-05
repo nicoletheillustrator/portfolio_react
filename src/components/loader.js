@@ -53,25 +53,11 @@ export default function Loader() {
         
 
 
-            Function.prototype.bind = function(parent) {
-                var f = this;
-                var args = [];
-            
-                for (var a = 1; a < arguments.length; a++) {
-                    args[args.length] = arguments[a];
-                }
-            
-                var temp = function() {
-                    return f.apply(parent, args);
-                }
-            
-                return(temp);
-            }
 
         setTimeout(() => {
-            pageRef.current.style.display = 'none';
+            pageRef.current.style.display = 'none !important';
            
-            window.onloadstart(alert("hey!"));
+            console.log("new loD")
             
         }, "4500")
 
