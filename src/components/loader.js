@@ -51,8 +51,27 @@ export default function Loader() {
                 easing: 'easeInOutQuint'
             });
         
+
+
+            Function.prototype.bind = function(parent) {
+                var f = this;
+                var args = [];
+            
+                for (var a = 1; a < arguments.length; a++) {
+                    args[args.length] = arguments[a];
+                }
+            
+                var temp = function() {
+                    return f.apply(parent, args);
+                }
+            
+                return(temp);
+            }
+
         setTimeout(() => {
             pageRef.current.style.display = 'none';
+           
+            window.onloadstart(alert("hey!"));
             
         }, "4500")
 
