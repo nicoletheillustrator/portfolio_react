@@ -9,6 +9,7 @@ export default function Loader() {
 
 
     window.onload = () => {
+
          var loaderwolf = anime.timeline({
             easing: 'easeInOutQuart',
             duration: 1500,
@@ -50,6 +51,7 @@ export default function Loader() {
                 ],
                 easing: 'easeInOutQuint'
             });
+        
 
     };
 
@@ -62,9 +64,9 @@ function test() {
             function(){
             pageRef.current.style.display = 'none';
            
-            console.log("new load")
+            console.log("new loD")
             
-        }, "4500")
+        }, "8500")
     }
 //
 }
