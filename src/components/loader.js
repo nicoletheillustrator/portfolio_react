@@ -1,5 +1,5 @@
 import React from 'react';
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs';
 
 export default function Loader() {
 
