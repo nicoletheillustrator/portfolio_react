@@ -13,9 +13,9 @@ export default function Loader() {
         
         var loaderwolf = anime.timeline({
             easing: 'easeInOutQuart',
-            duration: 1500,
+            duration: 1000,
             opacity: [
-                {value: [0, 1], duration: 200}
+                {value: [0, 1], duration: 150}
             ],
  
          });
@@ -29,7 +29,7 @@ export default function Loader() {
     
             .add({
         
-                duration: 1000,
+                duration: 500,
                 targets: '.path-c',
                 strokeDashoffset: [anime.setDashoffset, 0],
                 opacity: 1
@@ -37,14 +37,14 @@ export default function Loader() {
     
             .add({
              
-                duration: 500,
+                duration: 250,
                 targets: '.path-b',
                 strokeDashoffset: [anime.setDashoffset, 0],
                 opacity: 1
             })
             
             .add ({
-                delay: 300,
+                delay: 150,
                 targets: '.loader-wolf',
                 keyframes : [
                     {scale: 1.1},
