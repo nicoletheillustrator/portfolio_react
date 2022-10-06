@@ -68,7 +68,9 @@ export default function Loader() {
 
 
 function test() {
-    console.log("test first load")
+    if (window.onload) {
+        console.log("works mobile")
+    }
 //
 }
    test()
