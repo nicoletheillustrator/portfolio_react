@@ -6,8 +6,6 @@ export default function Loader() {
     const pageRef = React.useRef()
 
     // until a better solution comes aka more education. what works, works.
-   
-
     window.addEventListener('load', (event) => {
         console.log('page is fully loaded');
         
@@ -60,10 +58,10 @@ export default function Loader() {
            
             console.log("new loD")
             
-        }, "4500")
+        }, "3000")
       });
 
-
+  
     return (
         <div id="loader-wrap" ref={pageRef}>
         <svg className="loader-wolf" viewBox="0 0 91 105" fill="none" xmlns="http://www.w3.org/2000/svg">
