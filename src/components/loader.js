@@ -1,5 +1,5 @@
 import React from 'react';
-import anime from 'animejs/lib/anime.es.js';
+import anime from '/animejs/lib/anime.es.js';
 
 export default function Loader() {
 
@@ -9,7 +9,6 @@ export default function Loader() {
 
 
     window.onload = () => {
-
          var loaderwolf = anime.timeline({
             easing: 'easeInOutQuart',
             duration: 1500,
@@ -75,7 +74,7 @@ function test() {
             function(){
             pageRef.current.style.display = 'none';
            
-            console.log("new loD")
+            console.log("new load")
             
         }, "4500")
     }
