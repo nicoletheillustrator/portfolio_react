@@ -6,17 +6,18 @@ export default function Loader() {
     const pageRef = React.useRef()
 
     // until a better solution comes aka more education. what works, works.
+   
 
-
-    window.onload = () => {
-
-         var loaderwolf = anime.timeline({
+    window.addEventListener('load', (event) => {
+        console.log('page is fully loaded');
+        
+        var loaderwolf = anime.timeline({
             easing: 'easeInOutQuart',
             duration: 1500,
             opacity: [
                 {value: [0, 1], duration: 200}
             ],
-
+ 
          });
          
         loaderwolf 
@@ -52,25 +53,17 @@ export default function Loader() {
                 easing: 'easeInOutQuint'
             });
         
-
-    };
-
-
-function test() {
-    if (window.onload) {
-            console.log("works mobile")
-
+ 
         setTimeout(
             function(){
             pageRef.current.style.display = 'none';
            
             console.log("new loD")
             
-        }, "8500")
-    }
-//
-}
-   test()
+        }, "4500")
+      });
+
+
     return (
         <div id="loader-wrap" ref={pageRef}>
         <svg className="loader-wolf" viewBox="0 0 91 105" fill="none" xmlns="http://www.w3.org/2000/svg">
