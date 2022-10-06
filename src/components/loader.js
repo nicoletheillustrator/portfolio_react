@@ -50,18 +50,6 @@ export default function Loader() {
                 ],
                 easing: 'easeInOutQuint'
             });
-        
-
-
-
-        setTimeout(
-            function(){
-            pageRef.current.style.display = 'none';
-           
-            console.log("new loD")
-            
-        }, "4500")
-
 
     };
 
