@@ -70,6 +70,14 @@ export default function Loader() {
 function test() {
     if (window.onload) {
         console.log("works mobile")
+
+        setTimeout(
+            function(){
+            pageRef.current.style.display = 'none';
+           
+            console.log("new loD")
+            
+        }, "4500")
     }
 //
 }
