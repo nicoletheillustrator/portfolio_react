@@ -15,8 +15,12 @@ export default function Loader() {
       
         setTimeout(
             function(){
-            pageRef.current.style.display = "none";
-            console.log("new loD")
+                if(pageRef.current){
+            pageRef.current.style.display = "none";}
+            
+            else {
+                console.log("fail")
+            }
             
         }, "3400")
       });
