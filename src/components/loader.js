@@ -8,7 +8,7 @@ export default function Loader() {
     const ref2 = React.useRef()
     const ref3 = React.useRef()
     // until a better solution comes aka more education. what works, works.
-    window.addEventListener('load', (event) => {
+    window.addEventListener('load', () => {
         console.log('page is fully loaded');
         
         ref1.current.style.animation = headAnimation

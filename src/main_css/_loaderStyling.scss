@@ -25,21 +25,21 @@
   }
     @keyframes wolf {
       from {
-        transform: scale(1);
+        -webkit-transform: scale(1);
         opacity: 1;
       }
       10% {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
       }
       20% {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
       }
       70% {
-        opacity: 1;
+        -webkit-opacity: 1;
       }
       to {
-        transform: scale(.5);
-        opacity: 0;
+        -webkit-transform: scale(.5);
+        -webkit-opacity: 0;
       }
     }
     .path-a {
@@ -51,13 +51,13 @@
     @keyframes dash1 {
       from {
         stroke-dashoffset: 1000;
-        opacity: 0;
+        -webkit-opacity: 0;
       }
       to {
         stroke-dashoffset: 0;
       }
       30% {
-        opacity: 1;
+        -webkit-opacity: 1;
       }
     }
     .path-c {
@@ -68,15 +68,14 @@
     }
     @keyframes dash2 {
       from {
-        animation-delay: 750ms;
         stroke-dashoffset: 1000;
-        opacity: 0;
+        -webkit-opacity: 0;
       }
       to {
         stroke-dashoffset: 0;
       }
       30% {
-        opacity: 1;
+        -webkit-opacity: 1;
       }
     }
   
@@ -89,12 +88,12 @@
     @keyframes dash2 {
       from {
         stroke-dashoffset: 1000;
-        opacity: 0;
+        -webkit-opacity: 0;
       }
       to {
         stroke-dashoffset: 0;
       }
       30% {
-        opacity: 1;
+        -webkit-opacity: 1;
       }
     }
