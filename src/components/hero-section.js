@@ -9,7 +9,7 @@ export default function HeroSection() {
     
     
                     <div className="heading-zone">
-                        <p className="descript">I am from the <span className="bold">east coast of the US</span>, to the streets of Paris and now based in the invigorating city of <span className="bold">Seoul, South Korea</span>. I am a junior, self-learned <span className="bold">Front-End developer</span>. <br></br>I make websites that are comfortable, user-friendly and multilingual. With my experiences of working as a Graphic Designer and Game Animator, I can further websites to be not only artistic but user friendly.</p>
+                        <p className="descript">I am from the <span className="bold">east coast of the US</span>, to the streets of Paris and now based in the invigorating city of <span className="bold">Seoul, South Korea</span>. I am a junior, self-learned <span className="bold">Front-End developer</span>. <br></br>I like to code sites that are comfortable, user-friendly and responsive. With my experiences of working as a Graphic Designer and Game Animator, I hope to give the best output I can in my codes.</p>
     
     
                         <div className="photo-set">
