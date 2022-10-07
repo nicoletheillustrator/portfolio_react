@@ -21,50 +21,9 @@
   stroke: rgb(255, 255, 255);
   fill: none;
   width: 75px;
-  -webkit-animation: wolf 1s ease-in-out;
-          animation: wolf 1s ease-in-out;
   transform: scale(1);
 }
 
-@-webkit-keyframes wolf {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  10% {
-    transform: scale(1.1);
-  }
-  20% {
-    transform: scale(1.1);
-  }
-  70% {
-    opacity: 1;
-  }
-  to {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-}
-
-@keyframes wolf {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  10% {
-    transform: scale(1.1);
-  }
-  20% {
-    transform: scale(1.1);
-  }
-  70% {
-    opacity: 1;
-  }
-  to {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-}
 .path-a {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -100,10 +59,10 @@
 .path-c {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash2 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
-          animation: dash2 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
-  -webkit-animation-delay: 750ms;
-          animation-delay: 750ms;
+  -webkit-animation: dash2 2750ms cubic-bezier(0.76, 0, 0.3, 1) forwards;
+          animation: dash2 2750ms cubic-bezier(0.76, 0, 0.3, 1) forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes dash2 {
@@ -134,13 +93,26 @@
 .path-b {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash2 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
-          animation: dash2 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
-  -webkit-animation-delay: 1.25s;
-          animation-delay: 1.25s;
+  -webkit-animation: dash3 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
+          animation: dash3 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
-@keyframes dash2 {
+@-webkit-keyframes dash3 {
+  from {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+@keyframes dash3 {
   from {
     stroke-dashoffset: 1000;
     opacity: 0;
