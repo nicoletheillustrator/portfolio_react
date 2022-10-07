@@ -9,10 +9,6 @@ export default function Loader() {
     const ref3 = React.useRef()
 
 
-   let pathA = document.getElementById('patha')
-   let pathB = document.getElementById('pathb')
-   let pathC = document.getElementById('pathc')
-   let wolf1 = document.getElementById('wolfpath')
     // until a better solution comes aka more education. what works, works.
     window.addEventListener('load', () => {
         console.log('page is fully loaded');
