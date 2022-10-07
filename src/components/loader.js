@@ -16,7 +16,8 @@ export default function Loader() {
         setTimeout(
             function(){
                 if(pageRef.current){
-            pageRef.current.style.display = "none";}
+           document.getElementById('loader-wrap').style.display = "none"
+                 }
             
             else {
                 console.log("fail")
