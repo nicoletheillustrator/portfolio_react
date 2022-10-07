@@ -23,7 +23,7 @@ export default function Loader() {
 
         setTimeout(
             function(){
-            pageRef.current.style.display = 'none';
+            document.getElementById('loader-wrap').current.style.display = 'none';
             console.log("new loD")
             
         }, "3400")
