@@ -11,13 +11,13 @@ export default function Loader() {
     window.addEventListener('load', () => {
         console.log('page is fully loaded');
         
-        ref1.current.style.animation = headAnimation
-        ref2.current.style.animation = earAnimation
-        ref2.current.style.animationDelay = "1s"
-        ref3.current.style.animation = earAnimation
-        ref3.current.style.animationDelay = "1500ms"
-        wolfref.current.style.animation = wolfzoom
-        wolfref.current.style.animationDelay = "2400ms"
+        // ref1.current.style.animation = headAnimation
+        // ref2.current.style.animation = earAnimation
+        // ref2.current.style.animationDelay = "1s"
+        // ref3.current.style.animation = earAnimation
+        // ref3.current.style.animationDelay = "1500ms"
+        // wolfref.current.style.animation = wolfzoom
+        // wolfref.current.style.animationDelay = "2400ms"
 
         setTimeout(
             function(){
@@ -27,9 +27,9 @@ export default function Loader() {
         }, "3400")
       });
 
-    let headAnimation = "dash1 10s cubic-bezier(0.22, 1, 0.36, 1) forwards";
-    let earAnimation = "dash2 2750ms cubic-bezier(0.76, 0, 0.30, 1) forwards";
-    let wolfzoom = "wolf 1250ms cubic-bezier(0.87, 0, 0.13, 1) forwards"
+    // let headAnimation = "dash1 10s cubic-bezier(0.22, 1, 0.36, 1) forwards";
+    // let earAnimation = "dash2 2750ms cubic-bezier(0.76, 0, 0.30, 1) forwards";
+    // let wolfzoom = "wolf 1250ms cubic-bezier(0.87, 0, 0.13, 1) forwards"
     return (
         <div id="loader-wrap" ref={pageRef}>
         <svg className="loader-wolf" ref={wolfref} viewBox="0 0 91 105" fill="none" xmlns="http://www.w3.org/2000/svg">
