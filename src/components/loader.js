@@ -9,20 +9,11 @@ export default function Loader() {
     const ref2 = React.useRef()
     const ref3 = React.useRef()
     // until a better solution comes aka more education. what works, works.
-    window.addEventListener('load', () => {
-        console.log('page is fully loaded');
-
-      
-        // setTimeout(
-        //     function(){
-        //    pageRef.current.style.display = "none";
-        // }, "3400")
-      });
       useEffect(() => {
         setTimeout(
             function(){
            pageRef.current.style.display = "none";
-        }, "3400")
+        }, "4000")
       
       }, [pageRef]);
     
