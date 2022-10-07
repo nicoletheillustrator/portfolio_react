@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function Loader() {
 
 
-    const pageRef = React.createRef()
+    const pageRef = React.useRef()
     const wolfref = React.useRef()
     const ref1 = React.useRef()
     const ref2 = React.useRef()
@@ -13,11 +13,18 @@ export default function Loader() {
         console.log('page is fully loaded');
 
       
+        // setTimeout(
+        //     function(){
+        //    pageRef.current.style.display = "none";
+        // }, "3400")
+      });
+      useEffect(() => {
         setTimeout(
             function(){
            pageRef.current.style.display = "none";
         }, "3400")
-      });
+      
+      }, [pageRef]);
     
     return (
         <div id="loader-wrap" ref={pageRef} >
