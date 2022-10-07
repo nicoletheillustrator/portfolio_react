@@ -17,13 +17,13 @@ export default function Loader() {
     window.addEventListener('load', () => {
         console.log('page is fully loaded');
         
-        pathA.style.animation = headAnimation
-        pathB.style.animationDelay = "1s"
-        pathB.style.animation = earAnimation
-        pathC.style.animation = earAnimation
-        pathC.style.animationDelay = "1500ms"
-       wolf1.style.animation = wolfzoom
-        wolf1.style.animationDelay = "2400ms"
+        document.getElementById('patha').style.animation = headAnimation
+        document.getElementById('pathb').style.animationDelay = "1s"
+        document.getElementById('pathb').style.animation = earAnimation
+        document.getElementById('pathc').style.animation = earAnimation
+        document.getElementById('pathc').style.animationDelay = "1500ms"
+        document.getElementById('wolfpath').style.animation = wolfzoom
+        document.getElementById('wolfpath').style.animationDelay = "2400ms"
 
         setTimeout(
             function(){
