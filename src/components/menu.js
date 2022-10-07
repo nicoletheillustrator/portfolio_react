@@ -16,7 +16,7 @@ export default function Menu() {
                         <li className='menubar-li'><a href="#footer_contact_me">contact</a></li>
                     
             
-                        <li className='menubar-li'><button className='resume-btn' href="./data/images/resume_01.pdf" target="_blank" rel="noopener noreferrer">resume</button></li>
+                        <li className='menubar-li'><a className='resume-btn' href="resume_01.pdf" target="_blank" rel="noopener noreferrer">resume</a></li>
                     </ul>
 
                 </div>
