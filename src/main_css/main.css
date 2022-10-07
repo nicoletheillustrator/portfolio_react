@@ -1,3 +1,140 @@
+#loader-wrap {
+  display: flex;
+  position: fixed;
+  background-color: #7B7672;
+  top: 0;
+  bottom: 0;
+  right: 0%;
+  left: 0;
+  z-index: 99;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.loader-wolf {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  stroke-width: 2.5px;
+  stroke: rgb(255, 255, 255);
+  fill: none;
+  width: 75px;
+  /* animation: wolf 1s ease-in-out; */
+  transform: scale(1);
+}
+
+@-webkit-keyframes wolf {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  70% {
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes wolf {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  70% {
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+.path-a {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  /* animation: dash1 10s cubic-bezier(0.22, 1, 0.36, 1) forwards ; */
+}
+
+
+
+@keyframes dash1 {
+  from {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+.path-c {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  /* animation: dash2 3s cubic-bezier(0.76, 0, 0.30, 1) forwards ; */
+  /* animation-delay: 750ms; */
+}
+
+@-webkit-keyframes dash2 {
+  from {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+.path-b {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  /* animation: dash2 3s cubic-bezier(0.76, 0, 0.30, 1) forwards ;
+  animation-delay: 1.25s; */
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
 #dark {
   background-color: #222F44;
   color: #D6DEEA;
@@ -757,7 +894,7 @@
 }
 @media (min-width: 1024px) {
   .scroll-down .menubar-pos {
-    transform: translate3d(0, -150%, 0);
+    transform: translate3d(0, -260%, 0);
   }
 }
 
@@ -895,15 +1032,6 @@
   .project-card-view-box {
     position: relative;
     z-index: 2;
-  }
-}
-
-@media (min-width: 1024px) {
-  .project-img {
-    width: 650px;
-    height: 420px;
-    background-color: rgba(115, 146, 192, 0.1960784314);
-    border-radius: 5px;
   }
 }
 
@@ -1181,38 +1309,4 @@
     background-color: #435E89;
     color: #F5F5F5;
   }
-}
-
-#loader-wrap {
-  display: flex;
-  position: fixed;
-  background-color: #7B7672;
-  top: 0;
-  bottom: 0;
-  right: 0%;
-  left: 0;
-  z-index: 99;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.loader-wolf {
-  margin: 0 auto;
-  justify-content: center;
-  stroke-width: 2.5px;
-  stroke: rgb(255, 255, 255);
-  fill: none;
-  width: 75px;
-}
-
-.loader-wolf .path-a {
-  opacity: 0;
-}
-.loader-wolf .path-b {
-  opacity: 0;
-}
-.loader-wolf .path-c {
-  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

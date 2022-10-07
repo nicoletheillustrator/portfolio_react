@@ -26,21 +26,21 @@
   }
     @keyframes wolf {
       from {
-        -webkit-transform: scale(1);
+        transform: scale(1);
         opacity: 1;
       }
       10% {
-        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
       }
       20% {
-        -webkit-transform: scale(1.1);
+       transform: scale(1.1);
       }
       70% {
-        -webkit-opacity: 1;
+        opacity: 1;
       }
       to {
-        -webkit-transform: scale(.5);
-        -webkit-opacity: 0;
+       transform: scale(.5);
+       opacity: 0;
       }
     }
     .path-a {
@@ -52,13 +52,13 @@
     @keyframes dash1 {
       from {
         stroke-dashoffset: 1000;
-        -webkit-opacity: 0;
+        opacity: 0;
       }
       to {
         stroke-dashoffset: 0;
       }
       30% {
-        -webkit-opacity: 1;
+        opacity: 1;
       }
     }
     .path-c {
@@ -70,13 +70,13 @@
     @keyframes dash2 {
       from {
         stroke-dashoffset: 1000;
-        -webkit-opacity: 0;
+       opacity: 0;
       }
       to {
         stroke-dashoffset: 0;
       }
       30% {
-        -webkit-opacity: 1;
+       opacity: 1;
       }
     }
   
@@ -89,12 +89,12 @@
     @keyframes dash2 {
       from {
         stroke-dashoffset: 1000;
-        -webkit-opacity: 0;
+        opacity: 0;
       }
       to {
         stroke-dashoffset: 0;
       }
       30% {
-        -webkit-opacity: 1;
+       opacity: 1;
       }
     }
