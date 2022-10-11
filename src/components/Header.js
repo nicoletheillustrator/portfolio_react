@@ -5,25 +5,26 @@ import Menu from './menu.js'
 
 export default function Header(props) {
     
-function toggleMenu() {
-    //toggles slide menu
-    const menuBtn = document.querySelector('.menubar-el') 
-    menuBtn.classList.toggle("is-active")
-    //toggles blur overlay filter
-    const overlayFilter = document.querySelector('#overlay')
-    overlayFilter.classList.toggle("is-active")
-
-    toggleMenuIcon()
-
-    }
 
     // need to switch between burger and close
     const barmenu = "fa-solid fa-bars"
     const closemenu = "fa-solid fa-xmark"
-    const [menuIcon, setMenuIcon] = useState(barmenu)
 
+    const [menuIcon, setMenuIcon] = useState(barmenu)
+    const menuref = React.useRef()
+    
+    
+    
+    
     function toggleMenuIcon() {
-        setMenuIcon((setMenuIcon) => (setMenuIcon === closemenu ? barmenu : closemenu))
+  //toggles slide menu
+  
+  menuref.current.classList.toggle("is-active")
+//toggles blur overlay filter
+        const overlayFilter = document.querySelector('#overlay')
+    overlayFilter.classList.toggle("is-active")
+
+        setMenuIcon((setMenuIcon) => (setMenuIcon === barmenu ? closemenu : barmenu))
         const menuBtnClose = document.querySelector("#menu-btn")
         menuBtnClose.classList.toggle("colorchange")
     }
@@ -63,23 +64,7 @@ function toggleMenu() {
 
     })
 
-//mouseup event for clicking outside div
-    document.addEventListener('mouseup', function(e) {
-        const container = document.getElementById('menubar-el');
-        const overlayFilter = document.querySelector('#overlay');
-        setMenuIcon((setMenuIcon) => (setMenuIcon = barmenu))
-            const menuBtnClose = document.querySelector("#menu-btn")
-       
-            if (overlayFilter.contains(e.target)) {
-            //menupanel removed
-            container.classList.remove("is-active")
-            //blur filter removed
-            overlayFilter.classList.remove("is-active")
-            //color change for toggle button removed 
-            menuBtnClose.classList.remove("colorchange")
 
-        }
-    });
 
     return (
         
@@ -92,8 +77,8 @@ function toggleMenu() {
                 
                 </div>
 
-                <div id='menu-btn' onClick={toggleMenu}><i className={menuIcon} id='menu-btn-selector'></i></div>
-                <Menu toggleMenu={toggleMenu} menuIcon={menuIcon}/>
+                <div id='menu-btn'><i className={menuIcon} id='menu-btn-selector'  onClick={toggleMenuIcon}></i></div>
+                <Menu ref={menuref}/>
             
             </nav>
         

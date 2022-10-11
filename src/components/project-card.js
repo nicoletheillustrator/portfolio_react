@@ -15,8 +15,8 @@ let techList = tech.map((item, index)=>
                         <p className="project-card-name">{props.dta.projectName}</p>
                         <p className="project-card-descript">{props.dta.projectDescription}</p>
                         <ul className="tech-ul">{techList}</ul>
-                        <i className="fa-brands fa-github giticon"> <a
-                        className="giticon" target="_blank" href={props.dta.projectHref} rel="noreferrer" > </a></i>
+                       <a
+                        className="giticon" target="_blank" href={props.dta.projectHref} rel="noreferrer"> <i className="fa-brands fa-github giticon"></i></a>
 
                         </div>
     )

@@ -3,7 +3,7 @@ import React from "react";
 export default function HeroSection() {
     return(
 
-        <section className="hero-section">
+        <section className="hero-section" id="hero-section">
             <h2 className="heading">Hello,<br></br> I am  <span id="boldname"> Nicole Park,</span><br></br><span id="italic">a</span> <span id="worktitle">junior UI/UX Developer</span></h2>
 <div className="heading-container">
     

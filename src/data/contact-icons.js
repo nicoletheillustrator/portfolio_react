@@ -2,12 +2,7 @@ const contactbtns = [
     {
         id: 1,
         iconClass: "fa-solid fa-square-envelope",
-        linkTo: "https://www.google.com/"
-    },
-    {
-        id: 2,
-        iconClass: "fa-brands fa-square-whatsapp",
-        linkTo: "https://www.google.com/"
+        linkTo: "nicole-park@naver.com"
     },
     {
         id: 3,
