@@ -15,7 +15,7 @@ export default function FooterSection() {
             <p className="footer-headline"> let's get in touch</p>
 
             <div className="footer-btn-wrapper"><button
-            className="footer-btn" >/contact me</button>
+            className="footer-btn" href="nicole-park@naver.com">/contact me</button>
             
             </div>
 <div className="icon-wrapper">
