@@ -13,9 +13,9 @@ const data = [
        {
         id: 2,
         projectName: "Sincerus Vizslas",
-        projectDescription: "Website created for a vizsla breeder in Virginia, USA. This website has the basics of Home and About landing page, a gallery and dog information page. Further image API will be added in the future.",
+        projectDescription: "Website created for a vizsla breeder in Virginia, USA. Website has the basics of Home and About landing page and dog info page. This Project is currently being remodelled in React",
         projectPreview: "",
-        projectTech: ["Html", "Css", "Javascript"],
+        projectTech: ["Html", "Css", "Javascript, React"],
         projectHref: "https://github.com/nicoletheillustrator/SincerWeb"
    
        },
