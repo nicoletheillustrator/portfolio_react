@@ -13,7 +13,7 @@ export default function Loader() {
         setTimeout(
             function(){
            pageRef.current.style.display = "none";
-        }, "4000")
+        }, "3900")
       
       }, [pageRef]);
     
