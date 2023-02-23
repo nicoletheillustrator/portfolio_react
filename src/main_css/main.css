@@ -9,7 +9,6 @@
   z-index: 99;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -22,25 +21,8 @@
   fill: none;
   width: 75px;
   transform: scale(1);
-  -webkit-animation: zoomout 1300ms ease-in-out forwards;
-          animation: zoomout 1300ms ease-in-out forwards;
-  -webkit-animation-delay: 2900ms;
-          animation-delay: 2900ms;
-}
-
-@-webkit-keyframes zoomout {
-  from {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.1);
-  }
-  40% {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(0.5);
-  }
+  animation: zoomout 1200ms cubic-bezier(0.83, 0, 0.17, 1) forwards;
+  animation-delay: 2900ms;
 }
 
 @keyframes zoomout {
@@ -60,21 +42,7 @@
 .path-a {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash1 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-          animation: dash1 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-@-webkit-keyframes dash1 {
-  from {
-    stroke-dashoffset: 1000;
-    opacity: 0;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-  30% {
-    opacity: 1;
-  }
+  animation: dash1 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes dash1 {
@@ -92,23 +60,8 @@
 .path-c {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash2 2750ms cubic-bezier(0.76, 0, 0.3, 1) forwards;
-          animation: dash2 2750ms cubic-bezier(0.76, 0, 0.3, 1) forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-@-webkit-keyframes dash2 {
-  from {
-    stroke-dashoffset: 1000;
-    opacity: 0;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-  30% {
-    opacity: 1;
-  }
+  animation: dash2 2750ms cubic-bezier(0.76, 0, 0.3, 1) forwards;
+  animation-delay: 1s;
 }
 
 @keyframes dash2 {
@@ -126,23 +79,8 @@
 .path-b {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash3 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
-          animation: dash3 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-}
-
-@-webkit-keyframes dash3 {
-  from {
-    stroke-dashoffset: 1000;
-    opacity: 0;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-  30% {
-    opacity: 1;
-  }
+  animation: dash3 3s cubic-bezier(0.76, 0, 0.3, 1) forwards;
+  animation-delay: 1500ms;
 }
 
 @keyframes dash3 {
@@ -312,7 +250,6 @@
     color: rgba(255, 93, 115, 0.3960784314);
     transform: translateX(-280px) translateY(20px);
     z-index: -1;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     white-space: pre;
@@ -353,7 +290,6 @@
 }
 @media (min-width: 2000px) {
   .page-section {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 0px 200px;
@@ -402,7 +338,6 @@
 
 .logo_name {
   margin-left: 25px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -685,21 +620,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     border-radius: 50%;
-    -webkit-animation: animate 950ms linear infinite;
-            animation: animate 950ms linear infinite;
-  }
-}
-
-@-webkit-keyframes animate {
-  0% {
-    width: 0px;
-    height: 0px;
-    opacity: 0.5;
-  }
-  100% {
-    width: 80px;
-    height: 80px;
-    opacity: 0;
+    animation: animate 950ms linear infinite;
   }
 }
 
@@ -756,7 +677,6 @@
     color: rgba(255, 93, 115, 0.1803921569);
     transform: translateX(-280px) translateY(20px);
     z-index: -1;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     white-space: pre;
@@ -1043,7 +963,8 @@
   .project-card-view-box {
     min-width: 270px;
     max-width: 650px;
-    height: 500px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media (min-width: 500px) {
@@ -1091,7 +1012,6 @@
   flex-wrap: wrap;
   list-style: none;
   padding: 0px 25px;
-  padding-top: 25px;
 }
 
 .tech-li {
@@ -1106,12 +1026,16 @@
   .giticon {
     font-size: 1.5rem;
     cursor: pointer;
-    margin: 25px 15px;
     color: #A3A3A3;
     filter: drop-shadow(0 0 0.75rem #C2C2C2);
-    position: absolute;
-    bottom: 0;
+    margin-right: 10px;
   }
+}
+
+.project-icons {
+  position: relative;
+  bottom: 0;
+  margin: 15px 0px 15px 27px;
 }
 
 @media (min-width: 1024px) {
@@ -1267,8 +1191,7 @@
 @media (min-width: 300px) {
   .email-wrapper a {
     display: block;
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
     margin: 20px auto;
     padding: 10px;
     color: #A3A3A3;

@@ -13,10 +13,11 @@ const data = [
        {
         id: 2,
         projectName: "Sincerus Vizslas",
-        projectDescription: "Website created for a vizsla breeder in Virginia, USA. Website has the basics of Home and About landing page and dog info page. This Project is currently being remodelled in React",
+        projectDescription: "A website written orginally in just HTML to be further redone in React. Instead of using multiple pages for each profile in HTML, I took advantage of Reacts' useState hook and general js mapping to update a card depending on the profile button clicked; for a faster load time.",
         projectPreview: "",
-        projectTech: ["Html", "Css", "Javascript, React"],
-        projectHref: "https://github.com/nicoletheillustrator/SincerWeb"
+        projectTech: ["Html", "Css", "Javascript", "React"],
+        projectHref: "https://github.com/nicoletheillustrator/SincerWeb",
+        projectLink: "https://tangerine-kelpie-187cad.netlify.app/"
    
        },
     {

@@ -692,7 +692,7 @@ text-align: center;
     @include sm {
         min-width: 270px;
         max-width: 650px;
-        height: 500px;
+        height: fit-content;
     }
     @include ms {
         height: 420px;
@@ -739,7 +739,7 @@ text-align: center;
         flex-wrap: wrap;
         list-style: none;
         padding: 0px 25px;
-        padding-top: 25px;
+        
 }
 
 .tech-li {
@@ -756,15 +756,16 @@ text-align: center;
     @include sm {
         font-size:  1.5rem;
         cursor: pointer;
-        margin: 25px 15px;
         color:$darksilver;
         filter: drop-shadow(0 0 0.75rem #C2C2C2);
-        position: absolute;
-        bottom: 0;
-        
+        margin-right: 10px;
     }
 }
-
+.project-icons {
+    position: relative;
+    bottom: 0;
+    margin: 15px 0px 15px 27px;
+}
 .project-section {
     @include l {
         margin: 0 auto;

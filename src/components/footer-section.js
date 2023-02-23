@@ -14,8 +14,11 @@ export default function FooterSection() {
 
             <p className="footer-headline"> let's get in touch</p>
 
-            <div className="footer-btn-wrapper"><button
-            className="footer-btn" href="nicole-park@naver.com">/contact me</button>
+            <div className="footer-btn-wrapper">
+                <a href="mailto:nicole-park@naver.com">
+                <button
+                className="footer-btn">/contact me</button>
+                </a>
             
             </div>
 <div className="icon-wrapper">
@@ -25,7 +28,7 @@ export default function FooterSection() {
                 </ul>
 </div>
 <div className="email-wrapper">
-        <a href="nicole-park@naver.com">nicole-park@naver.com</a>
+        <a href="mailto:nicole-park@naver.com">nicole-park@naver.com</a>
 </div>
 <p id="footer-ending">designed and built by Nicole Park</p>
         </section>

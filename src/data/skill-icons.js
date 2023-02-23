@@ -30,6 +30,10 @@ const skills = [
     {
         iconClass: "fa-brands fa-wordpress",
         skillName: "Wordpress"
+    },
+    {
+        iconClass: "fa-brands fa-php",
+        skillName: "PHP"
     }
 ]
 

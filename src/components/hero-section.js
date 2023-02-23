@@ -4,12 +4,12 @@ export default function HeroSection() {
     return(
 
         <section className="hero-section" id="hero-section">
-            <h2 className="heading">Hello,<br></br> I am  <span id="boldname"> Nicole Park,</span><br></br><span id="italic">a</span> <span id="worktitle">junior Front-end Developer</span></h2>
+            <h2 className="heading">Hello,<br></br> I am  <span id="boldname"> Nicole Park,</span><br></br><span id="italic">a</span> <span id="worktitle">Web Developer.</span></h2>
 <div className="heading-container">
     
     
                     <div className="heading-zone">
-                        <p className="descript">I am from the <span className="bold">east coast of the US</span>, to the streets of Paris and now based in the invigorating city of <span className="bold">Seoul, South Korea</span>. I am a junior, self-learned <span className="bold">Front-End developer</span>. <br></br>I like to code sites that are comfortable, user-friendly and responsive. With my experiences of working as a Graphic Designer and Game Animator, I hope to give the best output I can in my codes.</p>
+                        <p className="descript">I am from the <span className="bold">east coast of the US </span>but now live in <span className="bold">Seoul, South Korea</span>. I am a self-taught <span className="bold">Web Developer</span>. <br></br>I am pursing to write new websites that intrigue the people around me. <span className="bold">I am passionate on the ever growing knowledge of web development. </span>Websites after all, are a tool that connects us to others.</p>
     
     
                         <div className="photo-set">
