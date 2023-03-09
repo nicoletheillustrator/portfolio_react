@@ -23,17 +23,21 @@ const skills = [
         iconClass: "fa-brands fa-figma",
         skillName: "Figma"  
     },
-    {
+    {id: 7,
         iconClass: "fa-brands fa-sass",
         skillName: "Sass"  
     },
-    {
+    {id: 8,
         iconClass: "fa-brands fa-wordpress",
         skillName: "Wordpress"
     },
-    {
+    {id: 9,
         iconClass: "fa-brands fa-php",
         skillName: "PHP"
+    },
+    {id: 10,
+        iconClass: "fa-brands fa-node-js",
+        skillName: "Node JS"
     }
 ]
 
